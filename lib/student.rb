@@ -7,6 +7,11 @@ class Student < User
     @knowledge = []
   end
   
-  def new
+  def learn(string)
+    @knowledge << string
+  end
+  
+  def knowledge
+    @knowledge
   end
 end
